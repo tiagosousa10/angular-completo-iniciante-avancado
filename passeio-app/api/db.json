@@ -1,0 +1,19 @@
+{
+  "categorias": [
+    {
+      "id": "2",
+      "nome": "Shoppings",
+      "descricao": "Lugares para compras e passear"
+    },
+    {
+      "nome": "Restaurantes Atualizados",
+      "descricao": "Lugares para comer",
+      "id": "af4b"
+    },
+    {
+      "id": "8c0f",
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho com a familia"
+    }
+  ]
+}
