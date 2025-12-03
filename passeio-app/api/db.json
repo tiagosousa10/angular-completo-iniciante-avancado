@@ -15,5 +15,15 @@
       "nome": "Praias",
       "descricao": "Lugares para tomar banho com a familia"
     }
+  ],
+  "lugares": [
+    {
+      "id": "288e",
+      "nome": "teste",
+      "categoria": "Praias",
+      "localizacao": "Porto",
+      "urlFoto": "http://exemplo.com/foto.jpg",
+      "avaliacao": "4"
+    }
   ]
 }
