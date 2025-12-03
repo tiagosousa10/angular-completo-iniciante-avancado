@@ -24,6 +24,14 @@
       "localizacao": "Porto",
       "urlFoto": "http://exemplo.com/foto.jpg",
       "avaliacao": "4"
+    },
+    {
+      "id": "a136",
+      "nome": "Praia do Espelho",
+      "categoria": "Praias",
+      "localizacao": "Baia",
+      "urlFoto": "http://exemplo.com/foto.jpg",
+      "avaliacao": "5"
     }
   ]
 }

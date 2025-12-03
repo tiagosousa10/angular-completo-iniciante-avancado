@@ -15,6 +15,9 @@
         placeholder="Ex: Praia do Sol, Restaurante Estrela"
         class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
       />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')"
+        >Campo Obrigatório</span
+      >
     </div>
     <!-- categoria -->
     <div class="mb-4">
@@ -32,6 +35,9 @@
           {{ cat.nome }}
         </option>
       </select>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')"
+        >Campo Obrigatório</span
+      >
     </div>
 
     <!-- localizacao -->
@@ -47,6 +53,9 @@
         placeholder="Ex: São Paulo"
         class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
       />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('localizacao')"
+        >Campo Obrigatório</span
+      >
     </div>
     <!-- url foto -->
     <div class="mb-4">
@@ -61,6 +70,9 @@
         placeholder="Ex: http://exemplo.com/fotolugar.jpg"
         class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
       />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('urlFoto')"
+        >Campo Obrigatório</span
+      >
     </div>
     <!-- avaliacao -->
     <div class="mb-4">
@@ -80,6 +92,9 @@
         <option [value]="4">4 - Muito Bom</option>
         <option [value]="5">5 - Excelente</option>
       </select>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')"
+        >Campo Obrigatório</span
+      >
     </div>
 
     <button
