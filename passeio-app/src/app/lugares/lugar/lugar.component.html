@@ -1,7 +1,63 @@
 <div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6">
   <h2 class="text-2xl font-semibold text-gray-700 mb-4">Novos Lugares</h2>
   <hr />
-  <form id="lugarForm"></form>
+  <form id="lugarForm" [formGroup]="camposForm" (ngSubmit)="salvar()">
+    <!-- nome -->
+    <div class="mb-4">
+      <label for="nome" class="block text-gray-600 font-medium mb-2"
+        >Nome do Lugar</label
+      >
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        formControlName="nome"
+        placeholder="Ex: Praia do Sol, Restaurante Estrela"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+      />
+    </div>
+    <!-- categoria -->
+    <div class="mb-4">
+      <label for="nome" class="block text-gray-600 font-medium mb-2"
+        >Categoria</label
+      >
+    </div>
+
+    <!-- localizacao -->
+    <div class="mb-4">
+      <label for="localizacao" class="block text-gray-600 font-medium mb-2"
+        >Localizacao</label
+      >
+      <input
+        type="text"
+        id="localizacao"
+        name="localizacao"
+        formControlName="localizacao"
+        placeholder="Ex: São Paulo"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+      />
+    </div>
+    <!-- url foto -->
+    <div class="mb-4">
+      <label for="urlFoto" class="block text-gray-600 font-medium mb-2"
+        >urlFoto</label
+      >
+      <input
+        type="text"
+        id="urlFoto"
+        name="urlFoto"
+        formControlName="urlFoto"
+        placeholder="Ex: http://exemplo.com/fotolugar.jpg"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+      />
+    </div>
+    <!-- avaliacao -->
+    <div class="mb-4">
+      <label for="nome" class="block text-gray-600 font-medium mb-2"
+        >Avaliacao</label
+      >
+    </div>
+  </form>
   <button
     type="submit"
     class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700"
