@@ -22,7 +22,7 @@
       "nome": "teste",
       "categoria": "Praias",
       "localizacao": "Porto",
-      "urlFoto": "http://exemplo.com/foto.jpg",
+      "urlFoto": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/01/melhores-praias-do-brasil-praia-do-espelho-820x547.jpg",
       "avaliacao": "4"
     },
     {
@@ -30,7 +30,7 @@
       "nome": "Praia do Espelho",
       "categoria": "Praias",
       "localizacao": "Baia",
-      "urlFoto": "http://exemplo.com/foto.jpg",
+      "urlFoto": "https://parqueibirapuera.org/wp/wp-content/uploads/2016/03/RN-Ibirapuera-Aerea-20150121-5-1-foto-destacada-resized.jpg",
       "avaliacao": "5"
     }
   ]
