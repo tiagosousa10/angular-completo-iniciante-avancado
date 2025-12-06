@@ -1,24 +1,35 @@
 <!-- filtros -->
+<form #frm="ngForm">
+  <div class="p-4 bg-white shadow">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+      <input
+        type="text"
+        [(ngModel)]="nomeFiltro"
+        name="nomeFiltro"
+        placeholder="Pesquisar pelo nome do local"
+        class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400"
+      />
+      <select
+        [(ngModel)]="categoriaFiltro"
+        name="categoriaFiltro"
+        id=""
+        class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400"
+      >
+        <option [value]="">Todas as categorias</option>
+        <option *ngFor="let cat of categoriasFiltro" [value]="cat.nome">
+          {{ cat.nome }}
+        </option>
+      </select>
 
-<div class="p-4 bg-white shadow">
-  <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-    <input
-      type="text"
-      placeholder="Pesquisar pelo nome do local"
-      class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400"
-    />
-    <select
-      name=""
-      id=""
-      class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus:ring-blue-400"
-    >
-      <option [value]="">Todas as categorias</option>
-      <option *ngFor="let cat of categoriasFiltro" [value]="cat.nome">
-        {{ cat.nome }}
-      </option>
-    </select>
+      <button
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800"
+        (click)="filtrar()"
+      >
+        Pesquisar
+      </button>
+    </div>
   </div>
-</div>
+</form>
 
 <!-- listagem lugares -->
 
@@ -42,8 +53,11 @@
       </p>
       <p class="text-gray-500">Localizaçao: {{ lugar.localizacao }}</p>
       <div class="mt-2 flex items-center">
-        <span class="text-yellow-500"></span>
-        <span class="ml-2 text-gray-600">{{ lugar.avalicao }}</span>
+        <span
+          class="text-yellow-500"
+          [innerHTML]="getTotalEstrelas(lugar)"
+        ></span>
+        <span class="ml-2 text-gray-600">{{ lugar.avaliacao }}</span>
       </div>
     </div>
   </div>

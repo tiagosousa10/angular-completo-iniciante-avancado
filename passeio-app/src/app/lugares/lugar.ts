@@ -3,5 +3,5 @@ export class Lugar {
   categoria?: string;
   localizacao?: string;
   urlFoto?: string;
-  avalicao?: number;
+  avaliacao?: number;
 }

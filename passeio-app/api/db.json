@@ -32,6 +32,14 @@
       "localizacao": "Baia",
       "urlFoto": "https://parqueibirapuera.org/wp/wp-content/uploads/2016/03/RN-Ibirapuera-Aerea-20150121-5-1-foto-destacada-resized.jpg",
       "avaliacao": "5"
+    },
+    {
+      "id": "d6b7",
+      "nome": "Restaurante",
+      "categoria": "Restaurantes Atualizados",
+      "localizacao": "Porto",
+      "urlFoto": "https://imgs.search.brave.com/d9IybbX-HtUO_AJTQUPQR6SMvj8rh9XuiE_GI87YKoQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/OTczMDAwNS9lcy9m/b3RvL2NoZWYtY29j/aW5hbmRvLWVuLXVu/LXJlc3RhdXJhbnRl/LXktcXVlbWFuZG8t/bGEtY29taWRhLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1q/UkFrNnlXMG56ajIw/Ym8tUTZsUVRPRkcz/TjczaGlvR3dXaDhP/SEYzVHprPQ",
+      "avaliacao": "5"
     }
   ]
 }
