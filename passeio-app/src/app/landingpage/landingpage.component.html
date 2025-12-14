@@ -12,9 +12,23 @@
 
     <button
       (click)="navegar()"
+      *ngIf="isLoggedIn()"
       class="bg-white text-blue-400 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 flex space-x-3 items-center"
     >
       Olá {{ profile?.name }}, clique aqui para continuar
+    </button>
+
+    <button
+      (click)="logarComGoogle()"
+      *ngIf="!isLoggedIn()"
+      class="bg-white text-blue-700 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 flex space-x-3 items-center"
+    >
+      <img
+        src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+        alt=""
+        width="50px"
+      />
+      Logar com Google
     </button>
   </div>
 </div>
