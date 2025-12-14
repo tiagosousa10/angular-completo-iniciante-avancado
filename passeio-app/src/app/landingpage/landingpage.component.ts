@@ -26,6 +26,12 @@ export class LandingpageComponent {
   }
 
   isLoggedIn(): boolean {
+    const dadosGoogle = this.loginService.getLoggedProfile();
+    console.log(
+      '🚀 ~ LandingpageComponent ~ isLoggedIn ~ dadosGoogle:',
+      dadosGoogle
+    );
+    this.profile = dadosGoogle;
     return !!this.profile;
   }
 }
