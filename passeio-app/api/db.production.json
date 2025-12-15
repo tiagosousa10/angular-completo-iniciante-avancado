@@ -1,0 +1,29 @@
+{
+  "categorias": [
+    {
+      "id": "2",
+      "nome": "Shoppings",
+      "descricao": "Lugares para compras e passear"
+    },
+    {
+      "nome": "Restaurantes Atualizados",
+      "descricao": "Lugares para comer",
+      "id": "af4b"
+    },
+    {
+      "id": "8c0f",
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho com a familia"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "288e",
+      "nome": "Praia do Encanto",
+      "categoria": "Praias",
+      "localizacao": "Porto",
+      "urlFoto": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/01/melhores-praias-do-brasil-praia-do-espelho-820x547.jpg",
+      "avaliacao": "4"
+    }
+  ]
+}
